@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import VideoCard from "../components/VideoCard/VideoCard";
+import {videoCards} from "../data";
 
 const HomeContainer = styled.div`
   display: grid;
@@ -10,13 +11,8 @@ const HomeContainer = styled.div`
 const Home = () => {
     return (
         <HomeContainer>
-            <VideoCard image={"https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ"}/>
-            <VideoCard image={"https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ"}/>
-            <VideoCard image={"https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ"}/>
-            <VideoCard image={"https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ"}/>
-            <VideoCard image={"https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ"}/>
-            <VideoCard image={"https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ"}/>
-        </HomeContainer>
+            {videoCards.map((card) => <VideoCard card={card}/>)}
+         </HomeContainer>
     );
 };
 

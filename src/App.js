@@ -5,7 +5,7 @@ import GlobalStyles from "./styles/GlobalStyles";
 import React, {useState} from "react";
 import {darkTheme, lightTheme} from "./styles/ThemeProvider";
 import NavbarCategory from "./components/NavbarCategory/NavbarCategory";
-import {Routes, Route, BrowserRouter} from "react-router-dom";
+import {Routes, Route, BrowserRouter, useLocation} from "react-router-dom";
 import Home from "./pages/Home";
 import Video from "./pages/Video/Video";
 
@@ -19,36 +19,34 @@ const Main = styled.div`
 `;
 
 const Wrapper = styled.div`
-    padding: 30px;
+  padding: 30px;
 `;
 
 function App() {
     const [darkMode, setDarkMode] = useState(true);
 
-    const path = window.location.pathname;
+    const {pathname} = useLocation();
 
     return (
         <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
             <GlobalStyles/>
             <AppContainer>
-                <BrowserRouter>
-                    <Sidebar darkMode={darkMode} setDarkMode={setDarkMode}/>
+                <Sidebar darkMode={darkMode} setDarkMode={setDarkMode}/>
 
-                    <Main>
-                        <Navbar/>
-                        {path === "/" && <NavbarCategory/>}
-                        <Wrapper>
-                            <Routes>
-                                <Route path={"/"}>
-                                    <Route index element={<Home/>}/>
-                                    <Route path={"video"}>
-                                        <Route path={":id"} element={<Video/>}/>
-                                    </Route>
+                <Main>
+                    <Navbar/>
+                    {pathname === "/" && <NavbarCategory/>}
+                    <Wrapper>
+                        <Routes>
+                            <Route path={"/"}>
+                                <Route index element={<Home/>}/>
+                                <Route path={"video"}>
+                                    <Route path={":id"} element={<Video/>}/>
                                 </Route>
-                            </Routes>
-                        </Wrapper>
-                    </Main>
-                </BrowserRouter>
+                            </Route>
+                        </Routes>
+                    </Wrapper>
+                </Main>
             </AppContainer>
         </ThemeProvider>
     );

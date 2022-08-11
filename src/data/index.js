@@ -1,72 +1,42 @@
-export const card = [
+export const videoCards = [
     {
         image: "https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ",
         title: "SpaceX Website Clone",
         channel: "Traversy Media",
         views: "19k views",
-        time: "1 day aogo"
-    },
-    {
-        image: "https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ",
-        title: "SpaceX Website Clone",
-        channel: "Traversy Media",
-        views: "19k views",
-        time: "1 day aogo"
-    },
-    {
-        image: "https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ",
-        title: "SpaceX Website Clone",
-        channel: "Traversy Media",
-        views: "19k views",
-        time: "1 day aogo"
-    },
-    {
-        image: "https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ",
-        title: "SpaceX Website Clone",
-        channel: "Traversy Media",
-        views: "19k views",
-        time: "1 day aogo"
-    },
-    {
-        image: "https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ",
-        title: "SpaceX Website Clone",
-        channel: "Traversy Media",
-        views: "19k views",
-        time: "1 day ago"
+        time: "1 day ago",
+        id: 1,
     },
     {
         image: "https://i.ytimg.com/vi/qxVh2OPRfKw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCaunYb2WUVuo87ZJzy7Ew_OvQf7g",
         title: "4 HUGE SIGNS ALLAH IS HAPPY WITH YOU",
         channel: "TheGuidedPath",
         views: "18,852 views",
-        time: "1 week ago"
+        time: "1 week ago",
+        id: 3,
     },
     {
         image: "https://i.ytimg.com/vi/C0NH1Izy5zM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBZenJBBe7uoZvaPf5GCk71bUSUTA",
         title: "SpaceX Website Clone",
         channel: "Traversy Media",
         views: "19k views",
-        time: "1 day aogo"
+        time: "1 day ago",
+        id: 4,
     },
     {
         image: "https://i.ytimg.com/vi/lj5SzG4XHJo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBXG82rY1N-HW_ZRQguInFyqWMq-g",
         title: "SpaceX Website Clone",
         channel: "Traversy Media",
         views: "19k views",
-        time: "1 day aogo"
+        time: "1 day ago",
+        id: 5,
     },
     {
         image: "https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ",
         title: "SpaceX Website Clone",
         channel: "Traversy Media",
         views: "19k views",
-        time: "1 day aogo"
-    },
-    {
-        image: "https://i.ytimg.com/vi/wryPX7KSwSc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjb3P6txw3Svs7W18Y4lPuh28NbQ",
-        title: "SpaceX Website Clone",
-        channel: "Traversy Media",
-        views: "19k views",
-        time: "1 day aogo"
+        time: "1 day ago",
+        id: 6,
     }
 ]

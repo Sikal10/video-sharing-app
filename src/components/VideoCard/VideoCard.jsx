@@ -10,19 +10,19 @@ import {
 } from "./videoCardStyles";
 import {Link} from "react-router-dom";
 
-const VideoCard = ({image}) => {
+const VideoCard = ({type, card}) => {
     return (
-        <Link to={"/video/1"}>
-            <CardContainer>
-                <Image src={image} />
+        <Link to={`/video/${card.id}`}>
+            <CardContainer type={type}>
+                <Image type={type} src={card.image} />
 
-                <VideoDetails>
-                    <ChannelImage />
+                <VideoDetails type={type}>
+                    <ChannelImage src={card.image} type={type} />
 
                     <TextDetails>
-                        <VideoTitle> Title </VideoTitle>
-                        <ChannelName>Lama Dev</ChannelName>
-                        <Info> 19k views · 1 day ago </Info>
+                        <VideoTitle>{card.title}</VideoTitle>
+                        <ChannelName>{card.channel}</ChannelName>
+                        <Info> {card.views} · {card.time} </Info>
                     </TextDetails>
                 </VideoDetails>
             </CardContainer>
